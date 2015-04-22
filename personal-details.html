@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>newGenesisStoreDemo - Order History</title>
+    <title>newGenesisStoreDemo - Personal Details</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -85,54 +85,46 @@
           <aside id="my-account-menu">
             <h3>Account</h3>
             <ul>
-              <li><a href="#">My Account</a></li>
-              <li><a href="#">Order History</a></li>
+              <li><a href="personal-details.html">My Account</a></li>
+              <li><a href="order-history.html">Order History</a></li>
               <li><a href="#">Wishlist</a></li>
               <li><a href="#">Sign Out</a></li>
             </ul>
           </aside><!--end my-account menu-->
-          <section id="order-history">
-            <h1>Order History</h1>
-            <table border="1">
-              <tr>
-                <th>#</th>
-                <th>Order ID</th>
-                <th>Date</th>
-                <th>Amount</th>
-                <th>Status</th>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td><a href="order-details.html">987655394</a></td>
-                <td>March 27, 2015</td>
-                <td>N280000</td>
-                <td class="finalized">Finalized</td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td><a href="order-details.html">987655394</a></td>
-                <td>March 28, 2015</td>
-                <td>N280000</td>
-                <td class="pending">Pending</td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td><a href="order-details.html">987655394</a></td>
-                <td>March 29, 2015</td>
-                <td>N280000</td>
-                <td class="aborted">Aborted</td>
-              </tr>
-            </table>    
-        </section><!-- end order-details -->
+          <section id="personal-details">
+            <h1>Personal Details</h1>
+            <form action="#" method="post">
+              <p>
+                <label for="firstname">
+                  <span class="required-field">*</span>First Name:
+                </label>
+                <input type="text" id="firstname" name="firstname" required>
+              </p>
+              <p>
+                <label for="lastname">
+                  <span class="required-field">*</span>Last Name:
+                </label>
+                <input type="text" id="lastname" name="lastname" required>
+              </p>
+              <p>
+                <label for="email">
+                  <span class="required-field">*</span>email:
+                </label>
+                <input type="email" id="email" name="email" required>
+              </p>
+              <p>
+                <label for="telephone">
+                  <span class="required-field">*</span>Telephone:
+                </label>
+                <input type="phone" id="telephone" name="telephone" required>
+              </p>
+   
+              <p>Fields marked with <span class="required-field">*</span>are required</p>
+              <hr>
+              <input type="submit" value="Save Changes" class="secondary-cart-btn">
+          </form>
+        </section><!-- end personal-details -->
       </article><!-- end main content -->
-       <hr />
-      <section id="pagination">
-        <p>Page:
-          <span class="current">1</span> / 
-          <a href="#">2</a> / 
-          <a href="#">3</a>
-        </p>
-      </section><!--end pagination -->
       <hr />
       <footer>
         <section id="contact">

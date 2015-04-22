@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>newGenesisStoreDemo - Order History</title>
+    <title>newGenesisStoreDemo - Shopping Cart</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -19,7 +19,7 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <main id="wrapper">
-       <header id="header" class="">
+      <header id="header" class="">
          <section id="top-area">
            <p>Phone Orders: 08136868448 | Email us <a href="mailto:clients@newgenesisedesign.com">clients@newgenesisedesign.com</a></p>
          </section><!-- end top area --> 
@@ -63,7 +63,7 @@
            <nav class="dropdown">
              <ul>
                <li>
-                 <a href="#"><img src="img/user-signin.gif" alt="NewGenesisDesign"> NewGenesisDesign <img src="img/down-arrow.gif" alt="NewGenesisDesign"></a>
+                 <a href="signin.html"><img src="img/user-signin.gif" alt="NewGenesisDesign"> NewGenesisDesign <img src="img/down-arrow.gif" alt="NewGenesisDesign"></a>
                  <ul>
                    <li><a href="order-history.html">Order History</a></li>
                    <li><a href="#">Wish list</a></li>
@@ -80,59 +80,74 @@
          </div><!-- end view-cart -->
        </section><!-- end action-bar -->
       </header><!-- /header -->
-      <hr>
+      <hr />
       <article id="main-content" class="clearfix">
-          <aside id="my-account-menu">
-            <h3>Account</h3>
-            <ul>
-              <li><a href="#">My Account</a></li>
-              <li><a href="#">Order History</a></li>
-              <li><a href="#">Wishlist</a></li>
-              <li><a href="#">Sign Out</a></li>
-            </ul>
-          </aside><!--end my-account menu-->
-          <section id="order-history">
-            <h1>Order History</h1>
+        <section id="shopping-cart">
+          <h1>Shopping Cart</h1>
+          <form action="#" method="post">
             <table border="1">
               <tr>
                 <th>#</th>
-                <th>Order ID</th>
-                <th>Date</th>
-                <th>Amount</th>
-                <th>Status</th>
+                <th>Product Name</th>
+                <th>Unit Price</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
               </tr>
               <tr>
                 <td>1</td>
-                <td><a href="order-details.html">987655394</a></td>
-                <td>March 27, 2015</td>
+                <td>
+                  <img src="img/main-product.png" alt="product" width="65" height="37" /> 
+                  Product Name
+                </td>
                 <td>N280000</td>
-                <td class="finalized">Finalized</td>
+                <td>
+                  <input type="text" value="1" maxlength="2" class="qty" /> 
+                  <a href="#">
+                    <img src="img/refresh.gif" alt="Refresh Cart" />
+                  </a>
+                </td>
+                <td>
+                  N280000 
+                  <a href="#">
+                    <img src="img/cancel.gif" alt="Remove Product" />
+                  </a>
+                </td>
               </tr>
               <tr>
-                <td>1</td>
-                <td><a href="order-details.html">987655394</a></td>
-                <td>March 28, 2015</td>
+                <td>2</td>
+                 <td>
+                  <img src="img/main-product.png" alt="product" width="65" height="37" /> 
+                  Product Name
+                </td>
                 <td>N280000</td>
-                <td class="pending">Pending</td>
+                <td>
+                  <input type="text" value="2" maxlength="2" class="qty" /> 
+                  <a href="#">
+                    <img src="img/refresh.gif" alt="Refresh Cart" />
+                  </a>
+                </td>
+                <td>
+                  N516000 
+                  <a href="#">
+                    <img src="img/cancel.gif" alt="Remove Product" />
+                  </a>
+                </td>
               </tr>
-              <tr>
-                <td>1</td>
-                <td><a href="order-details.html">987655394</a></td>
-                <td>March 29, 2015</td>
-                <td>N280000</td>
-                <td class="aborted">Aborted</td>
+              <tr class="total">
+                <td colspan="5">
+                  Subtotal: N796000 <br>
+                       Tax: Tax:0%<br>
+                  Delivery: 0.00<br>
+                  <span>TOTAL: N796000</span><br>
+                  <a href="index.html" class="tertiary-btn">Continue Shopping</a>
+                  <input type="submit" value="Proceed to CheckOut" class="secondary-cart-btn">
+                </td>
               </tr>
-            </table>    
-        </section><!-- end order-details -->
+            </table> 
+            
+          </form>
+        </section><!-- end shopping cart -->
       </article><!-- end main content -->
-       <hr />
-      <section id="pagination">
-        <p>Page:
-          <span class="current">1</span> / 
-          <a href="#">2</a> / 
-          <a href="#">3</a>
-        </p>
-      </section><!--end pagination -->
       <hr />
       <footer>
         <section id="contact">
@@ -145,11 +160,11 @@
           <div id="my-account">
             <h4>MY ACCOUNT</h4>
             <ul>
-              <li><a href="#">Sign In</a></li>
-              <li><a href="#">Sign Up</a></li>
+              <li><a href="signin.html">Sign In</a></li>
+              <li><a href="new-account.html">Sign Up</a></li>
               <li><a href="#">Wishlist</a></li>
-              <li><a href="#">Order History</a></li>
-              <li><a href="#">Shopping Cart</a></li>
+              <li><a href="order-history.html">Order History</a></li>
+              <li><a href="cart.html">Shopping Cart</a></li>
             </ul>
           </div><!-- end my account -->
           <div id="info">
@@ -163,7 +178,7 @@
             <h4>EXTRAS</h4>
             <ul>
               <li><a href="#">About Us</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
             </ul>
           </div><!-- end extras -->
       </section><!-- end links -->
@@ -171,7 +186,7 @@
       <section class="clearfix">
          <div id="copyright">
          <div id="logo">
-          <a href="#">
+          <a href="index.html">
             <span id="logo-accent">new</span>GenesisStoreDemo
           </a>
          </div><!--end logo -->

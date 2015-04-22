@@ -602,9 +602,10 @@ header a:link, header a:visited {
     font-weight: normal;
   }
   /*=========================================================================
-    New Account style
+    New Account  & personal-details style
     ========================================================================*/
-  #new-account {
+  #new-account,
+  #personal-details {
     width: 400px;
     margin: 0 auto 30px auto;
     padding: 20px;
@@ -613,29 +614,34 @@ header a:link, header a:visited {
     color: #2e373f;
   }
 
-  #new-account h1 {
+  #new-account h1,
+  #personal-details h1 {
     font-size: 16px;
     font-weight: normal;
     margin-bottom: 15px;
   }
 
-  #new-account label {
+  #new-account label,
+  #personal-details label {
     display: block;
     margin-bottom: 5px
   }
   
-  #new-account p {
-    font-size: 12px;
+  #new-account p, 
+  #personal-details p {
+    font-size: 14px;
   }
 
-  #new-account p input {
+  #new-account p input,
+  #personal-details p input {
     width: 300px;
     border: 1px solid #eee;
     padding: 10px;
     border-radius: 10px;
   }
   
-  #new-account .required-field {
+  #new-account .required-field,
+  #personal-details .required-field {
     color: #5daad0;
   }
 
@@ -707,10 +713,11 @@ header a:link, header a:visited {
   }
 
   /*==========================================================================
-     order detils & order-history style
+     order detils & order-history  & personal-details & shopping cart style
     =========================================================================*/
   #order-details,
-  #order-history {
+  #order-history,
+  #personal-details {
     text-align: left;
     width: 900px;
     float: right;
@@ -722,8 +729,10 @@ header a:link, header a:visited {
     margin-bottom: 0;
   }
 
-  #order-details h1, #order-details h2,
-  #order-history h1 {
+  #order-details h1, 
+  #order-details h2,
+  #order-history h1,
+  #shopping-cart h1 {
     color: #2e373f;
     font-weight: normal;
     margin-bottom: 20px;
@@ -731,7 +740,8 @@ header a:link, header a:visited {
   }
 
   #order-details h1,
-  #order-history h1 {
+  #order-history h1,
+  #shopping-cart h1 {
     font-size: 24px;
   }
 
@@ -751,25 +761,57 @@ header a:link, header a:visited {
   }
 
   #order-details table,
-  #order-history table {
+  #order-history table,
+  #shopping-cart table {
     color: #5f5e5e;
     width: 870px;
     margin-bottom: 40px;
   }
 
+  #shopping-cart table {
+    width: 1080px;
+  }
+
   #order-details th,
-  #order-history th {
+  #order-history th,
+  #shopping-cart th {
     padding: 20px
   }
 
   #order-details td,
-  #order-history td {
+  #order-history td,
+  #shopping-cart td {
     padding: 10px;
   }
   
+  #shopping-cart .qty {
+    border: 1px solid #aaa;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 20px;
+  }
+  
+  #shopping-cart td span {
+    display: block; 
+  }
+
+  #shopping-cart td .tertiary-btn {
+    float: left;
+  }
+
   #order-history a {
     color:  #5daad0;
     text-decoration:  none; 
+  }
+
+  #personal-details form,
+  #personal-details h1 {
+    position: relative;
+    left: 300px;
+  }
+
+  #personal-details hr {
+    width: 617px;
   }
   .total {
     text-align: right;
@@ -932,7 +974,7 @@ header a:link, header a:visited {
 .tertiary-btn {
     background-color: #f6f6f6;
     color: #5f5e5e;
-    padding: 15px 35px;
+    padding: 10px;
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
