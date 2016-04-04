@@ -10,6 +10,5 @@ FROM nginx
 MAINTAINER Patrick Dunnigan
 
 ADD artifact/stores-ui.tz /usr/share/nginx/html/
-
 # Port to expose
 EXPOSE 80
